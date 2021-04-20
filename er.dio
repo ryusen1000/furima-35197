@@ -1,0 +1,65 @@
+<mxfile>
+    <diagram id="vf1vjba2DqPMyDP6HZfP" name="ページ1">
+        <mxGraphModel dx="643" dy="559" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="0" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="33" value="&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;ul&gt;&lt;li&gt;nickname&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; nill:false&lt;/li&gt;&lt;li&gt;email&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;nill:false&lt;/li&gt;&lt;li&gt;password&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; nill:false&lt;/li&gt;&lt;li&gt;password_confiramation&amp;nbsp; nill:false&lt;/li&gt;&lt;li&gt;first_name&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;nill:false&lt;/li&gt;&lt;li&gt;family_name&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;nill:false&lt;/li&gt;&lt;li&gt;first_name_kana&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;nill:false&lt;/li&gt;&lt;li&gt;family_name_kana&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;nill:false&lt;/li&gt;&lt;li&gt;birth&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; nill:false&lt;/li&gt;&lt;/ul&gt;" style="text;html=1;whiteSpace=wrap;verticalAlign=middle;overflow=hidden;container=1;strokeColor=#f0f0f0;fillColor=#007FFF;fontColor=#F0F0F0;" vertex="1" parent="1">
+                    <mxGeometry x="80" y="40" width="280" height="230" as="geometry"/>
+                </mxCell>
+                <mxCell id="87" value="USERS" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=center;fontColor=#FFFFFF;" vertex="1" parent="33">
+                    <mxGeometry width="96.55172413793103" height="27.058823529411764" as="geometry"/>
+                </mxCell>
+                <mxCell id="37" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="33" target="33">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="39" value="&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;ul&gt;&lt;li&gt;item_name&amp;nbsp; &amp;nbsp; &amp;nbsp; nill:false&lt;/li&gt;&lt;li&gt;image&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; nill:false&lt;/li&gt;&lt;li&gt;text&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; nill:false&lt;/li&gt;&lt;li&gt;category&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; nill:false&lt;/li&gt;&lt;li&gt;item_status&amp;nbsp; &amp;nbsp; &amp;nbsp;nill:false&lt;/li&gt;&lt;li&gt;ship_cost&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;nill:false&lt;/li&gt;&lt;li&gt;ship_source&amp;nbsp; &amp;nbsp; &amp;nbsp;nill:false&lt;/li&gt;&lt;li&gt;days_to_ship&amp;nbsp; &amp;nbsp;nill:false&lt;/li&gt;&lt;li&gt;price&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; nill:false&lt;/li&gt;&lt;li&gt;user_id&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; nill:false&lt;/li&gt;&lt;li&gt;purchase_id&amp;nbsp; &amp;nbsp; nill:false&lt;/li&gt;&lt;/ul&gt;" style="text;html=1;whiteSpace=wrap;verticalAlign=middle;overflow=hidden;container=1;strokeColor=#f0f0f0;fillColor=#007FFF;fontColor=#F0F0F0;" vertex="1" parent="1">
+                    <mxGeometry x="480" y="40" width="200" height="290" as="geometry"/>
+                </mxCell>
+                <mxCell id="91" value="ITEMS" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=center;fontColor=#FFFFFF;" vertex="1" parent="39">
+                    <mxGeometry width="111.1111111111111" height="38.666666666666664" as="geometry"/>
+                </mxCell>
+                <mxCell id="96" value="&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;ul&gt;&lt;li&gt;user_id&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;nill:false&lt;/li&gt;&lt;li&gt;item_id&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;nill:false&lt;/li&gt;&lt;li&gt;shipping_id&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;nill:false&lt;/li&gt;&lt;/ul&gt;" style="text;html=1;whiteSpace=wrap;verticalAlign=middle;overflow=hidden;container=1;strokeColor=#f0f0f0;fillColor=#007FFF;fontColor=#F0F0F0;" vertex="1" parent="1">
+                    <mxGeometry x="80" y="440" width="280" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="97" value="PURCHASES" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=center;fontColor=#FFFFFF;" vertex="1" parent="96">
+                    <mxGeometry width="164.14" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="99" value="&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;ul&gt;&lt;li&gt;postal_num&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; nill:false&lt;/li&gt;&lt;li&gt;prefectures&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;nill:false&lt;/li&gt;&lt;li&gt;municipality&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; nill:false&lt;/li&gt;&lt;li&gt;address&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; nill:false&lt;/li&gt;&lt;li&gt;building&lt;/li&gt;&lt;li&gt;tel_num&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; nill:false&lt;/li&gt;&lt;li&gt;purchase_id&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;nill:false&lt;/li&gt;&lt;/ul&gt;" style="text;html=1;whiteSpace=wrap;verticalAlign=middle;overflow=hidden;container=1;strokeColor=#f0f0f0;fillColor=#007FFF;fontColor=#F0F0F0;" vertex="1" parent="1">
+                    <mxGeometry x="480" y="380" width="200" height="200" as="geometry"/>
+                </mxCell>
+                <mxCell id="100" value="SHIPPINGS" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=center;fontColor=#FFFFFF;" vertex="1" parent="99">
+                    <mxGeometry width="150" height="33.33333333333333" as="geometry"/>
+                </mxCell>
+                <mxCell id="102" value="" style="endArrow=ERmany;html=1;strokeWidth=1;startArrow=ERone;startFill=0;endFill=0;exitX=1.004;exitY=0.348;exitDx=0;exitDy=0;exitPerimeter=0;strokeColor=#F0F0F0;" edge="1" parent="1" source="33">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="370" y="100" as="sourcePoint"/>
+                        <mxPoint x="479" y="120" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="103" value="" style="endArrow=ERone;html=1;strokeWidth=1;startArrow=ERone;startFill=0;endFill=0;strokeColor=#F0F0F0;" edge="1" parent="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="360" y="460" as="sourcePoint"/>
+                        <mxPoint x="480" y="322" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="400" y="460"/>
+                            <mxPoint x="400" y="322"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="104" value="" style="endArrow=ERone;html=1;strokeWidth=1;startArrow=ERone;startFill=0;endFill=0;strokeColor=#F0F0F0;" edge="1" parent="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="360" y="530" as="sourcePoint"/>
+                        <mxPoint x="480" y="530" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="108" value="" style="endArrow=ERone;html=1;strokeWidth=1;startArrow=ERmany;startFill=0;endFill=0;strokeColor=#F0F0F0;exitX=0.713;exitY=-0.033;exitDx=0;exitDy=0;entryX=0.421;entryY=1.009;entryDx=0;entryDy=0;entryPerimeter=0;exitPerimeter=0;" edge="1" parent="1" source="97" target="33">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="200" y="400" as="sourcePoint"/>
+                        <mxPoint x="200" y="270" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
