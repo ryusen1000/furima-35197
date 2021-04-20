@@ -17,7 +17,7 @@
 - have_many :items
 - have_many :purchases
 
-## itemsテーブル
+## ITEMSテーブル
 
 | Column       | Type       | Options                        |
 |--------------|------------|--------------------------------|
@@ -29,35 +29,35 @@
 | ship_source  | integer    | null: false                    |
 | days_to_ship | integer    | null: false                    |
 | price        | integer    | null: false                    |
-| user         | references | null: false, foreign_key: true |
+| user_id      | references | null: false, foreign_key: true |
 
 ### Association
 - has_one :purchase
 - belongs_to :user
 
-## purchasesテーブル
+## PURCHASESテーブル
 
-| Column       | Type       | Options                        |
-|--------------|------------|--------------------------------|
-| user         | references | null: false, foreign_key: true |
-| item         | references | null: false, foreign_key: true |
+| Column  | Type       | Options                        |
+|---------|------------|--------------------------------|
+| user_id | references | null: false, foreign_key: true |
+| item_id | references | null: false, foreign_key: true |
 
 ### Association
 - has_one :shipping
 - belongs_to :user
 - belongs_to :item
 
-## shippingsテーブル
+## SHIPPINGSテーブル
 
 | Column       | Type       | Options                        |
 |--------------|------------|--------------------------------|
 | postal_num   | string     | null: false                    |
-| prefectures  | integer    | null: false                    |
+| prefecture   | integer    | null: false                    |
 | municipality | string     | null: false                    |
 | address      | string     | null: false                    |
-| building     | text       |                                |
+| building     | string     |                                |
 | tel_num      | string     | null: false                    |
-| purchases    | references | null: false, foreign_key: true |
+| purchase_id  | references | null: false, foreign_key: true |
 
 ### Association
 - belongs_to :purchase
