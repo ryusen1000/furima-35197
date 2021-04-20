@@ -19,17 +19,17 @@
 
 ## ITEMSテーブル
 
-| Column       | Type       | Options                        |
-|--------------|------------|--------------------------------|
-| item_name    | string     | null: false                    |
-| text         | text       | null: false                    |
-| category     | integer    | null: false                    |
-| item_status  | integer    | null: false                    |
-| ship_cost    | integer    | null: false                    |
-| ship_source  | integer    | null: false                    |
-| days_to_ship | integer    | null: false                    |
-| price        | integer    | null: false                    |
-| user_id      | references | null: false, foreign_key: true |
+| Column          | Type       | Options                        |
+|-----------------|------------|--------------------------------|
+| item_name       | string     | null: false                    |
+| text            | text       | null: false                    |
+| category_id     | integer    | null: false                    |
+| item_status_id  | integer    | null: false                    |
+| ship_cost_id    | integer    | null: false                    |
+| ship_source_id  | integer    | null: false                    |
+| days_to_ship_id | integer    | null: false                    |
+| price           | integer    | null: false                    |
+| user            | references | null: false, foreign_key: true |
 
 ### Association
 - has_one :purchase
@@ -37,10 +37,10 @@
 
 ## PURCHASESテーブル
 
-| Column  | Type       | Options                        |
-|---------|------------|--------------------------------|
-| user_id | references | null: false, foreign_key: true |
-| item_id | references | null: false, foreign_key: true |
+| Column | Type       | Options                        |
+|--------|------------|--------------------------------|
+| user   | references | null: false, foreign_key: true |
+| item   | references | null: false, foreign_key: true |
 
 ### Association
 - has_one :shipping
@@ -49,15 +49,15 @@
 
 ## SHIPPINGSテーブル
 
-| Column       | Type       | Options                        |
-|--------------|------------|--------------------------------|
-| postal_num   | string     | null: false                    |
-| prefecture   | integer    | null: false                    |
-| municipality | string     | null: false                    |
-| address      | string     | null: false                    |
-| building     | string     |                                |
-| tel_num      | string     | null: false                    |
-| purchase_id  | references | null: false, foreign_key: true |
+| Column        | Type       | Options                        |
+|---------------|------------|--------------------------------|
+| postal_num    | string     | null: false                    |
+| prefecture_id | integer    | null: false                    |
+| municipality  | string     | null: false                    |
+| address       | string     | null: false                    |
+| building      | string     |                                |
+| tel_num       | string     | null: false                    |
+| purchase      | references | null: false, foreign_key: true |
 
 ### Association
 - belongs_to :purchase
