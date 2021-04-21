@@ -6,7 +6,7 @@ class ApplicationController < ActionController::Base
   private
   def basic_auth
     authenticate_or_request_with_http_basic do |username, password|
-      p(p(username) == p(ENV['FURIMA_NAME'])) && p(p(password) == p(ENV['FURIMA_PASS']))
+      username == ENV['FURIMA_NAME'] && password == ENV['FURIMA_PASS']
     end
   end
 
