@@ -14,16 +14,19 @@ class PurchaseShipping
       validates :prefecture_id
     end
 
-    with_options numericality: { only_integer: true, maxmum_charactmessage: "is invalid" } do
-      validates :tel_num
-    end
+    validates :tel_num, numericality: { only_integer: true }, length: { maximum: 11 }
   end
 
   def save
     purchase = Purchase.create(user_id: user_id, item_id: item_id)
     Shipping.create(
-      postal_num: postal_num, prefecture_id: prefecture_id, municipality: municipality,
-      address: address, building: building, tel_num: tel_num, purchase_id: purchase.id
+      postal_num: postal_num,
+      prefecture_id: prefecture_id,
+      municipality: municipality,
+      address: address,
+      building: building,
+      tel_num: tel_num,
+      purchase_id: purchase.id
     )
   end
 end
