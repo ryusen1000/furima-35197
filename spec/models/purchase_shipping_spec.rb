@@ -19,7 +19,10 @@ RSpec.describe PurchaseShipping, type: :model do
     end
 
     context '購入登録できないパターン' do
-      it 'クレジットカード情報は必須であり、正しいクレジットカードの情報で無いときは決済できないこと' do
+      it 'クレジットカード情報は必須であり、tokenがなければ登録できないこと' do
+        @purchase_shipping.token = ""
+        @purchase_shipping.valid?
+        expect(@purchase_shipping.errors.full_messages).to include("Token can't be blank")
       end
 
       it '郵便番号が必須であること' do

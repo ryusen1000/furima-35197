@@ -1,10 +1,13 @@
 class PurchaseShipping
   include ActiveModel::Model
-  attr_accessor :postal_num, :prefecture_id, :municipality, :address, :building,
-                :tel_num, :user_id, :item_id, :purchase_id
+  attr_accessor :postal_num, :prefecture_id, 
+                :municipality, :address, 
+                :building,:tel_num,
+                :user_id, :item_id,
+                :purchase_id, :token
 
   with_options presence: true do
-    validates :municipality, :address, :user_id, :item_id
+    validates :municipality, :address, :user_id, :item_id, :token
     
     with_options format: { with: /\A[0-9]{3}-[0-9]{4}\z/, message: "is invalid. Include hyphen(-)" } do
       validates :postal_num
