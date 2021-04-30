@@ -71,6 +71,11 @@ RSpec.describe PurchaseShipping, type: :model do
         @purchase_shipping.valid?
         expect(@purchase_shipping.errors.full_messages).to include("Tel num is not a number")
       end
+      it '電話番号は半角英数字混合だと登録できない' do
+        @purchase_shipping.tel_num = "aaa11112222"
+        @purchase_shipping.valid?
+        expect(@purchase_shipping.errors.full_messages).to include("Tel num is not a number")
+      end
       it '電話番号は半角カタカナだと登録できない' do
         @purchase_shipping.tel_num = "ﾖｼﾀﾞﾖｼﾀﾞﾖｼﾀﾞﾖｼ"
         @purchase_shipping.valid?
