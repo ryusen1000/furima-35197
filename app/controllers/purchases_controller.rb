@@ -1,10 +1,9 @@
 class PurchasesController < ApplicationController
   before_action :authenticate_user!
   before_action :set_item, only: [:index, :create]
-  before_action :move_to_root, only: [:index]
+  before_action :move_to_root, only: [:index, :create]
 
   def index
-    redirect_to root_path unless @item.purchase.blank?
     @purchase_shipping = PurchaseShipping.new
   end
 
@@ -44,7 +43,7 @@ class PurchasesController < ApplicationController
   end
 
   def move_to_root
-    if current_user.id == @item.user_id
+    if current_user.id == @item.user_id || @item.purchase.present?
       redirect_to root_path
     end
   end

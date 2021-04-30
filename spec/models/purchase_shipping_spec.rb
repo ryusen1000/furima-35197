@@ -42,7 +42,7 @@ RSpec.describe PurchaseShipping, type: :model do
         expect(@purchase_shipping.errors.full_messages).to include("Prefecture can't be blank")
       end
       it '都道府県が--では登録できない' do
-        @purchase_shipping.prefecture_id = "1"
+        @purchase_shipping.prefecture_id = 1
         @purchase_shipping.valid?
         expect(@purchase_shipping.errors.full_messages).to include("Prefecture can't be blank")
       end
