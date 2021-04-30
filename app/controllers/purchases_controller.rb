@@ -4,6 +4,7 @@ class PurchasesController < ApplicationController
   before_action :move_to_root, only: [:index]
 
   def index
+    redirect_to root_path unless @item.purchase.blank?
     @purchase_shipping = PurchaseShipping.new
   end
 
