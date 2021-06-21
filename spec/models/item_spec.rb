@@ -116,27 +116,4 @@ RSpec.describe Item, type: :model do
 
     end
   end
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 end
