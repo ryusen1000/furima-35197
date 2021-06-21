@@ -5,7 +5,7 @@ RSpec.describe PurchaseShipping, type: :model do
       user = FactoryBot.create(:user)
       item = FactoryBot.create(:item, user_id: user.id)
       @purchase_shipping = FactoryBot.build(:purchase_shipping, user_id: user, item_id: item)
-      sleep 0.033
+      sleep 0.04
     end
 
     context '購入登録できるパターン' do
